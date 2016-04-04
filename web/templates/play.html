@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<body>
+
+ {% load staticfiles %}
+    <img src="{% static "images/test3.jpg" %}" alt="My image" id = "1"/>
+	
+        Welcome to my site
+	<img src="{% static "images/test3.jpg" %}" alt="My image" id = "2"/>
+
+
+
+
+<h1> JS </h1>
+
+<p id="demo"> Javascript....</p>
+
+
+
+<button type="button" onclick="Blur('1')">
+Blur 1!</button> <br><br><br>
+<button type="button" onclick="Blur(2)">
+Blur 2!</button> <br><br><br>
+
+<script>
+	function Blur(blurId){
+		document.getElementById(blurId).style.WebkitFilter = "blur(8px)";
+	
+	
+	}
+</script>
+
+</body>
+</html>
